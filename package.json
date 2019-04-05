@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-styles",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0",
   "description": "Storybook addon to add styles to preview window",
   "keywords": [
     "storybook",
