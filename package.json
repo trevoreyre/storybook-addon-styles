@@ -1,0 +1,49 @@
+{
+  "name": "storybook-addon-styles",
+  "version": "1.0.0-alpha.1",
+  "description": "Storybook addon to add styles to preview window",
+  "keywords": [
+    "storybook",
+    "addon",
+    "styles"
+  ],
+  "author": "Trevor Eyre <trevoreyre@gmail.com> (https://trevoreyre.com)",
+  "license": "MIT",
+  "repository": "trevoreyre/storybook-addon-styles",
+  "bugs": "https://github.com/trevoreyre/storybook-addon-styles/issues",
+  "private": false,
+  "scripts": {
+    "build": "babel src -d build",
+    "build:watch": "babel src -d build --watch",
+    "prettier": "prettier --write 'src/**/*.js'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "peerDependencies": {
+    "@storybook/addons": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addons": "^5.0.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4",
+    "react": "^16.8.6"
+  }
+}
