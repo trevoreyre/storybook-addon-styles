@@ -6,7 +6,7 @@ Release versions follow [Semver](https://semver.org/). To create a new release, 
 
 2. After merging changes, manually increment the version in `package.json`.
 
-3. Run `git tag -a v1.1`, using the new version number.
+3. Run `git tag v1.1`, using the new version number.
 
 4. If everything looks good, push tags to GitHub, `git push origin master --tags`
 
